@@ -12,10 +12,9 @@ div#header{
 	margin:0px auto;	
 }
 
-div#header h1{
-	margin-top: 30px;	
-	display:black;
-	float:left
+h1 {
+    font-size: 32px;
+    color: #231f20;
 }
 
 ul#nav{
@@ -68,18 +67,33 @@ div#banner a img{
 
 
 
-h1 {
-	color:#66bbff;
-	
-}
+
+
 .Botao1 {
-	
 	text-decoration:nome;
-	background-color:#66bbff;
+	background-color:green;
 	padding: 5px 10px 5px 10px;
 	color:#fff;
 	font-size:1.2em;
 	font-weight:700;
 	border-radius:5px;
+	border:0;
+	cursor: pointer;
+}
+
+
+.Caixa1 {
+	width:320px;
+	padding: 5px ;
+	margin-bottom:10px;
+	border: 1px solid #66bbff;
+	border-radius: 5px;	
+}
+
+.Caixa2 {
+	padding: 5px ;
+	margin-bottom:10px;
+	border: 1px solid #66bbff;
+	border-radius: 5px;	
 }
 
