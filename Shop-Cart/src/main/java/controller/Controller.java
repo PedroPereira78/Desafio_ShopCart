@@ -53,15 +53,29 @@ public class Controller extends HttpServlet {
 	protected void registos(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.sendRedirect("registo.jsp");
+		
+		//Criar um objeto que vai receber os dados JavaBeans
+		//ArrayList<JavaBeans> lista = dao.listaRegistos();
 
 	}
 	//Novo registo
 	protected void novoRegisto(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		//teste dados formulario
-		System.out.println(request.getParameter("nome"));
+		/*System.out.println(request.getParameter("nome"));
 		System.out.println(request.getParameter("telemovel"));
 		System.out.println(request.getParameter("email"));
+		*/
+		//--------------
+		registo.setNome(request.getParameter("nome"));
+		registo.setTelemovel(request.getParameter("telemovel"));
+		registo.setEmail(request.getParameter("email"));
+		
+		//Chamar o metodo inserirRegisto passando o objeto registo
+		dao.inserirRegisto(registo);
+		
+		//rencaminhar para o documento registo.jsp
+		response.sendRedirect("main");
 
 	}
 }
