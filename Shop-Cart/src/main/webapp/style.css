@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
+
 body {
 	font-family:'Open Sans', sans-serif;
 	font-size:1em;
@@ -49,10 +50,10 @@ ul#nav a.ativa{
 }
 
 div#banner{
-	width:800px;
-	height:160px;
+	width:1200px;
+	height:260px;
 	margin:0px auto;
-	background:url('imagens/banner.jpg') no-repeat;
+	background:url('imagens/home-img.png') no-repeat;
 	position:relative;
 }
 div#banner a{
@@ -97,3 +98,11 @@ div#banner a img{
 	border-radius: 5px;	
 }
 
+*{
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+margin: 0;
+padding:0;
+
+}

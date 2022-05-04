@@ -38,7 +38,7 @@ public class DAO {
 	 * }
 	 */
 
-	/* CRUDE CREATE */
+	/* CRUDE CREATE */ //Alterar para contacto
 	public void inserirRegisto(JavaBeans registo) {
 		String create = "insert into contactos (nome, telemovel, email) values(?,?,?)";
 
